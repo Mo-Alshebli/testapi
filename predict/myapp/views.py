@@ -17,7 +17,7 @@ class PredictAPIView(APIView):
             image = serializer.validated_data['image']
 
             try:
-                model = load_model(r'E:\محاضرة جامعة المعرفة\Lec\Computer_Vision_Lec-main\Computer_Vision_Lec-main\LEC_4\Cascaed\eye_state.h5')
+                model = load_model(r'..\predict\eye_state.h5')
             except Exception as e:
                 return Response({"error": "Failed to load the model."}, status=500)
 

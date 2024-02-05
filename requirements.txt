@@ -2,7 +2,7 @@ Django==4.2.6
 djangorestframework==3.14.0
 fastapi==0.103.2
 tensorflow
-python-opencv
+opencv-python
 frozenlist==1.4.0
 greenlet==3.0.0
 grpcio==1.59.2

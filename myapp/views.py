@@ -19,7 +19,7 @@ class PredictAPIView(APIView):
             try:
                 model = load_model(r'../predict/eye_state.h5')
             except Exception as e:
-                return Response({"error": "Failed to load the model."}, status=500)
+                return Response({"error": " ! Failed to load the model."}, status=500)
 
             IMAGE_SIZE = 48
 
